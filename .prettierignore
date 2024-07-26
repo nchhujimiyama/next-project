@@ -1,0 +1,13 @@
+node_modules/
+.github/
+.next/
+.nuxt/
+.astro/
+.vscode/
+build/
+dist/
+out/
+public/
+yarn.lock
+pnpm-lock.yaml
+next.config.js
