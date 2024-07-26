@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "fix:eslint": "eslint src --ext .js,.ts,.jsx,.tsx --fix",
+    "fix:eslint": "next lint --fix",
     "fix:prettier": "prettier --write ."
   },
   "dependencies": {
@@ -24,6 +24,8 @@
     "eslint-config-next": "14.2.5",
     "eslint-plugin-react": "^7.35.0",
     "globals": "^15.8.0",
+    "prettier": "^3.3.3",
+    "prettier-plugin-organize-imports": "^4.0.0",
     "typescript": "^5",
     "typescript-eslint": "^7.17.0"
   }
