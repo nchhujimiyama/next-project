@@ -1,5 +1,6 @@
 import Image from "next/image";
-import styles from "./page.module.css";
+import styles from "@/app/page.module.css";
+import { lusitana } from "@/styles/fonts";
 
 export default function Home() {
   return (
@@ -22,7 +23,7 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <h2>
+          <h2 className={lusitana.className}>
             Docs <span>-&gt;</span>
           </h2>
           <p>Find in-depth information about Next.js features and API.</p>
@@ -34,7 +35,7 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <h2>
+          <h2 className={lusitana.className}>
             Learn <span>-&gt;</span>
           </h2>
           <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
@@ -46,7 +47,7 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <h2>
+          <h2 className={lusitana.className}>
             Templates <span>-&gt;</span>
           </h2>
           <p>Explore starter templates for Next.js.</p>
@@ -58,7 +59,7 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <h2>
+          <h2 className={lusitana.className}>
             Deploy <span>-&gt;</span>
           </h2>
           <p>
