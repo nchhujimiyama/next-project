@@ -1,13 +1,24 @@
+"use client"
+
 import React from "react";
+import styled from "styled-components";
 import { SideNav } from "../organisms/SideNav";
 
 export const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
-    <div>
+    <Container>
       <SideNav />
-      <div>
+      <MainContent>
         {children}
-      </div>
-    </div>
+      </MainContent>
+    </Container>
   );
 }
+
+const Container = styled.div`
+  display: flex;
+  width: 100%;
+`
+const MainContent = styled.div`
+  flex: 1;
+`
