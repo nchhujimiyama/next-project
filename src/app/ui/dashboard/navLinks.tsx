@@ -28,8 +28,9 @@ export const NavLinks = () => {
     <>
       {links.map((link) => {
         const LinkIcon = link.icon;
+        const isActive = pathname === link.href;
         return (
-          <StyledLink key={link.name} href={link.href} active={pathname === link.href}>
+          <StyledLink key={link.name} href={link.href} active={isActive}>
             <LinkIcon />
             {link.name}
           </StyledLink>
@@ -39,7 +40,7 @@ export const NavLinks = () => {
   );
 }
 
-const StyledLink = styled(Link)<{ active?: boolean }>`
+const StyledLink = styled(Link)<{ active: boolean }>`
   display: flex;
   align-items: center;
   gap: .5rem;
