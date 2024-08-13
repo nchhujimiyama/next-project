@@ -1,10 +1,6 @@
-import { Layout } from "@/components/common/Layout";
-
 const Page = () => {
   return (
-    <Layout>
-      <p>Invoices Page</p>
-    </Layout>
+    <p>Invoices Page</p>
   );
 }
 
